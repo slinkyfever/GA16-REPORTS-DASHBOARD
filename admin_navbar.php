@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    
-    <link rel="stylesheet" href="css/admin_page_and_nav.css">
+   
+    <link href="css/admin_page.css" rel="stylesheet" type="text/css"/>
+    
+    
     <style>
         .nav {
             background: var(--green);

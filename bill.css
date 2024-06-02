@@ -1,9 +1,9 @@
-/* Sales Summary CSS */
+/* Existing CSS styles */
 
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -17,6 +17,87 @@ h2 {
     margin-bottom: 20px;
     font-size: 2em;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button.deliver,
+button.cancel,
+button.received {
+    width: 100%;
+}
+
+button.deliver {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+button.deliver:hover {
+    background-color: #138496;
+}
+
+button.cancel {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.cancel:hover {
+    background-color: #c82333;
+}
+
+button.received {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.received:hover {
+    background-color: #0056b3;
+}
+
+table th, table td {
+    text-align: center;
+}
+
+/* Additional styles for the Sales Summary page */
 
 .summary-cards {
     display: flex;
@@ -42,28 +123,4 @@ h2 {
     margin: 0;
     font-size: 1.2em;
     font-weight: bold;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
 }
